@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {
+          font-family: "Nunito", sans-serif;
+      }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="register.css">
+</head>
+<body style="display:flex; align-items:center; justify-content:center;">
+  <div class="login-page">
+    <div class="form">
+        <form action="/register" class="register-form" method="POST">
+        <h2><i class="fas fa-lock"></i> Register</h2>
+        <input type="text" name="name" placeholder="Full Name *" required/>
+        <input type="email" name="email" placeholder="Email *" required/>
+        <input type="password" name="password" placeholder="Password *" required/>
+        <button type="submit" class="submit-btn"><a href="/index.html">create</a></button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        </div>
+        </form>
+  </div>
+</div>
+<!-- <script>
+  // Function to open the popup
+  function openPopup() {
+      document.getElementById("popup").style.display = "block";
+  }
+
+  // Function to close the popup
+  function closePopup() {
+      document.getElementById("popup").style.display = "none";
+  }
+
+  // Event listener for the form submission
+  document.querySelector('.register-form').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      
+      const formData = new FormData(this);
+      const response = await fetch('/register', {
+          method: 'POST',
+          body: formData
+      });
+
+      if (response.ok) {
+          // Registration successful, redirect or show a success message
+          window.location.href = "../Frontend/index.html";
+      } else {
+          // Registration failed due to existing email, show the popup
+          openPopup();
+      }
+  });
+</script> -->
+
+
+</body>
+</html>
